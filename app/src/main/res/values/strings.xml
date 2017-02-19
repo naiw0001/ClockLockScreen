@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClockLockScreen</string>
+    <string-array name="text">
+        <item>힘내!</item>
+        <item>화이팅!</item>
+        <item>힘들면 쉬어도 좋아</item>
+        <item>넌 할수있어!</item>
+        <item>잘하고있어!</item>
+    </string-array>
+</resources>

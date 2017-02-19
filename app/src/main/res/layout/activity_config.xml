@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inwon.clocklockscreen.LockConfigure">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="이넌이 시계 ^^"
+        android:textSize="40dp"
+        android:id="@+id/maintext"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:text="멈춤"
+        android:layout_alignParentBottom="true"
+        android:onClick="lock"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/stop"
+        android:id="@+id/start"
+        android:text="시작"
+        android:onClick="lock"/>
+
+</RelativeLayout>

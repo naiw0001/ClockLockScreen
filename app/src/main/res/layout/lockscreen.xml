@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locklayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AM"
+            android:text="오전"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PM"
+            android:text="오후"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view2"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="한"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="두"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="세"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="네"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/five1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="다"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/five2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="섯"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/six1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="여"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/six2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="섯"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/seven1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="일"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/seven2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="곱"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/eight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="여"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/eight2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="덟"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/nine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="아"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/nine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="홉"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="열"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/han"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="한"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/du"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="두"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="시"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/ja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="자"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/yee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="이"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="삼"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="사"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/oh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="오"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="십"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout4"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/jung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="정"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/ill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="일"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/yee2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="이"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="삼"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="사"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/yuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="육"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout5"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/oh2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="오"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/oh3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="오"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/chil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="칠"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="팔"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/gu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="구"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/bun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="분"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="25dp"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="25dp"
+        android:background="#000000" />
+
+
+
+
+</RelativeLayout>
