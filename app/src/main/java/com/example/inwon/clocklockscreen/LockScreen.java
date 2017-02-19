@@ -2,8 +2,13 @@ package com.example.inwon.clocklockscreen;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -11,13 +16,16 @@ import android.os.PowerManager;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -40,6 +48,7 @@ public class LockScreen extends AppCompatActivity {
     private TextView ja, jung, oh;
     private Thread thread;
     private boolean threadrun = true;
+    private ImageView img;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +57,19 @@ public class LockScreen extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
         locklayout = (RelativeLayout) findViewById(R.id.locklayout);
         locklayout.setOnTouchListener(locktouch);
+
+        SharedPreferences pref = getSharedPreferences("locksceen_clock",MODE_PRIVATE);
+        int issw = pref.getInt("issw",0);
+        String imgpath = getFilesDir().getAbsolutePath()+"/back_img";
+        img = (ImageView)findViewById(R.id.img);
+
+        if(issw == 1){
+            Bitmap bm = BitmapFactory.decodeFile(imgpath);
+            img.setImageBitmap(bm);
+        }else {
+            locklayout.setBackgroundColor(Color.TRANSPARENT);
+            img.setImageBitmap(null);
+        }
 
         tenstext = new TextView[iiten.length];
 
@@ -204,8 +226,10 @@ public class LockScreen extends AppCompatActivity {
             bun.setTextColor(Color.BLUE);
             initmin_utext();
             if (imin_unit == j) {
-                if (imin_unit == 0 && imin_ten == 0) {
-                    bun.setTextColor(Color.GRAY);
+                if (imin_unit == 0) {
+                    if(imin_ten==0) {
+                        bun.setTextColor(Color.GRAY);
+                    }
                     break;
                 } else if (imin_unit == 9) {
                     mintext_units[8].setTextColor(Color.BLUE);

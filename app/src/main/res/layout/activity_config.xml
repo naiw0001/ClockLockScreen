@@ -16,14 +16,22 @@
         android:textSize="40dp"
         android:id="@+id/maintext"/>
 
-
     <TextView
         android:layout_width="match_parent"
         android:textSize="40dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="TEST"
+        android:id="@+id/test"
         android:layout_centerInParent="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setimg"
+        android:layout_below="@+id/test"
+        android:layout_centerHorizontal="true"
+        android:text="내 이미지 사용"/>
 
     <Button
         android:layout_width="match_parent"
