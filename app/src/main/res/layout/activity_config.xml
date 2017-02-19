@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="이넌이 시계 ^^"
+        android:text="잠금화면 시계"
         android:textSize="40dp"
         android:id="@+id/maintext"/>
 
