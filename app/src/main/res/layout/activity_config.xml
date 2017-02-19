@@ -8,7 +8,6 @@
 
 
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +15,15 @@
         android:text="잠금화면 시계"
         android:textSize="40dp"
         android:id="@+id/maintext"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TEST"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:layout_width="match_parent"
