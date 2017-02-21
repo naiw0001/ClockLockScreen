@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Copyright. 2017 MR.LEE(LEE SANG HUN)"
+        android:text="Copyright ⓒ 2017 MR.LEE(LEE SANG HUN). All right ® reserved."
         android:layout_below="@id/maintext"
         android:gravity="center"/>
 
