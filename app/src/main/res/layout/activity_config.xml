@@ -15,6 +15,12 @@
         android:text="잠금화면 시계"
         android:textSize="40dp"
         android:id="@+id/maintext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright. 2017 MR.LEE(LEE SANG HUN)"
+        android:layout_below="@id/maintext"
+        android:gravity="center"/>
 
     <TextView
         android:layout_width="match_parent"

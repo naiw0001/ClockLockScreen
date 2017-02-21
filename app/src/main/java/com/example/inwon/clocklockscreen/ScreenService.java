@@ -29,7 +29,6 @@ public class ScreenService extends Service{
     @Override
     public void onCreate() {
         super.onCreate();
-        registerRestartAlarm(true);
         receiver = new ScreenReceiver();
         IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_OFF);
         registerReceiver(receiver,filter);
