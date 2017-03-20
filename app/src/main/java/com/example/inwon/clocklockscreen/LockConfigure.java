@@ -117,6 +117,14 @@ public class LockConfigure extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
         intent.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        //Image Crop
+        intent.putExtra("crop","true");
+        intent.putExtra("aspectX",1);
+        intent.putExtra("aspectY",1);
+        intent.putExtra("outputX",300);
+        intent.putExtra("outputY",300);
+        intent.putExtra("scale",true);
+        intent.putExtra("return-data",true);
         startActivityForResult(intent,SELECT_PICTURE);
     }
 
@@ -125,8 +133,9 @@ public class LockConfigure extends AppCompatActivity {
         if(resultCode == RESULT_OK){
             if(requestCode == SELECT_PICTURE){
                 try {
-                   img_bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),data.getData());
-                } catch (IOException e) {
+//                   img_bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),data.getData());
+                    img_bitmap = data.getParcelableExtra("data");
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 

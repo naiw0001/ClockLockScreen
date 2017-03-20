@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LockScreen" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".LockScreen" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""/>
         <service android:name=".ScreenService"/>
         <receiver android:name=".ScreenReceiver"/>
         <receiver android:name=".BootReceiver"
